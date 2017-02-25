@@ -1,0 +1,132 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    border: 2px #D4D8DD;
+    border-radius: 8px;
+}
+header, footer {
+    background-color: #A2A8B2;
+    padding: 1em;
+}
+p {
+    color: #6F7D97;
+    font-size: 1em;
+}
+body {
+	background-color: #D4D8DD;
+	margin: 40px;
+}
+h1 {
+	font-weight: normal;
+	text-align: center; 
+	text-transform: uppercase;
+	font-size: 2em;
+	color: #D8DBE2;
+}
+h2 {
+	font-size: 1.5em; 
+	color: #D8DBE2;
+}
+nav a {
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    padding: 1em;
+}
+nav a:hover, nav a:active {
+	background-color: #A2A8B2;
+	padding: 1em;
+}
+a {
+    color: #6F7D97;
+    text-decoration: underline; 
+}
+a:hover {
+    font-weight: bold;
+}
+section {
+    background-color: white;
+    flex: 3;
+    text-align: center;
+    padding: 2em;
+    font-size: 1.25em;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+aside {
+    background-color: #D4D8DD;
+    flex: 2;
+}
+.cont {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.topright {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 1.25em;
+}
+.bottomleft {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 2.5em;
+}
+.banner { 
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+.nav-flex-container ul { 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.content-flex-container{
+    display: flex;
+    padding: 1em;
+    line-height: 2.0;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.aside-flex-container{
+    display: flex;
+    padding: 1em;
+}
+.flex-item {
+    max-width: 100%; 
+    margin: auto;
+    position: center;
+}
+.headshot:hover {
+    -webkit-box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+    box-shadow: 0px 0px 15px 10px rgba(255, 255, 255, .75);
+}
+.headshot {
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 185, 233, .75);
+    box-shadow: 0px 0px 15px 5px rgba(154, 154, 154, .75);
+    -webkit-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+#map {
+    width: 60em;
+    height: 25em;
+}
+
+
+
+
+
+
+
+
+
+
+

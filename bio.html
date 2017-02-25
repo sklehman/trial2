@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+	<title> &#10055; Samantha Lehman &#10055;</title>
+	<link rel = "stylesheet"
+	type = "text/css"
+	href = "skl.css" />
+</head>
+<body>
+	<div class="cont">
+		<img class="banner" src="IMG_4402.jpg" alt="banner" width="1000" height="300">
+		<nav class="nav-flex-container">
+			<div class="bottomleft"><h1>Samantha Lehman</h1></div>
+			<div class="topright">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="bio.html">Bio</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class= "content-flex-container">
+		<section><h1>Bio</h1>
+			<div id="map"></div>
+			<script>
+
+			function initMap() {
+			  var uluru = {lat: -25.363, lng: 131.044};
+			  var map = new google.maps.Map(document.getElementById('map'), {
+			    zoom: 4,
+			    center: uluru,
+				mapTypeControl: true,
+			    mapTypeControlOptions: {
+			        style: google.maps.MapTypeControlStyle.HORIZONTAL_BAR,
+			        position: google.maps.ControlPosition.TOP_RIGHT
+			    },
+			    zoomControl: true,
+			    zoomControlOptions: {
+			        position: google.maps.ControlPosition.LEFT_TOP
+			    },
+			    streetViewControl: false,
+			    scaleControl: true,
+			    scaleControlOptions: {
+			        position: google.maps.ControlPosition.BOTTOM_CENTER
+			    },
+			    fullscreenControl: true,
+			    fullscreenControlOptions: {
+			    	position: google.maps.ControlPosition.BOTTOM_RIGHT
+			    }
+			    styles: 
+			    [
+					{
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#f5f5f5"
+					  }
+					]
+					},
+					{
+					"elementType": "labels.icon",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#616161"
+					  }
+					]
+					},
+					{
+					"elementType": "labels.text.stroke",
+					"stylers": [
+					  {
+					    "color": "#f5f5f5"
+					  }
+					]
+					},
+					{
+					"featureType": "administrative.land_parcel",
+					"elementType": "labels",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "administrative.land_parcel",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#bdbdbd"
+					  }
+					]
+					},
+					{
+					"featureType": "poi",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#eeeeee"
+					  }
+					]
+					},
+					{
+					"featureType": "poi",
+					"elementType": "labels.text",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "poi",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#757575"
+					  }
+					]
+					},
+					{
+					"featureType": "poi.business",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "poi.park",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#e5e5e5"
+					  }
+					]
+					},
+					{
+					"featureType": "poi.park",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#9e9e9e"
+					  }
+					]
+					},
+					{
+					"featureType": "road",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#e7c78a"
+					  }
+					]
+					},
+					{
+					"featureType": "road",
+					"elementType": "geometry.fill",
+					"stylers": [
+					  {
+					    "color": "#ceb96f"
+					  },
+					  {
+					    "weight": 0.5
+					  }
+					]
+					},
+					{
+					"featureType": "road",
+					"elementType": "geometry.stroke",
+					"stylers": [
+					  {
+					    "color": "#ceb96f"
+					  },
+					  {
+					    "visibility": "on"
+					  },
+					  {
+					    "weight": 1
+					  }
+					]
+					},
+					{
+					"featureType": "road",
+					"elementType": "labels.icon",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "road.arterial",
+					"elementType": "labels",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "road.arterial",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#757575"
+					  }
+					]
+					},
+					{
+					"featureType": "road.highway",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#cbb979"
+					  }
+					]
+					},
+					{
+					"featureType": "road.highway",
+					"elementType": "labels",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "road.highway",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#616161"
+					  }
+					]
+					},
+					{
+					"featureType": "road.local",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "road.local",
+					"elementType": "labels",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "road.local",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#9e9e9e"
+					  }
+					]
+					},
+					{
+					"featureType": "transit",
+					"stylers": [
+					  {
+					    "visibility": "off"
+					  }
+					]
+					},
+					{
+					"featureType": "transit.line",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#e5e5e5"
+					  }
+					]
+					},
+					{
+					"featureType": "transit.station",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#eeeeee"
+					  }
+					]
+					},
+					{
+					"featureType": "water",
+					"stylers": [
+					  {
+					    "color": "#aef7f4"
+					  }
+					]
+					},
+					{
+					"featureType": "water",
+					"elementType": "geometry",
+					"stylers": [
+					  {
+					    "color": "#c9c9c9"
+					  }
+					]
+					},
+					{
+					"featureType": "water",
+					"elementType": "geometry.fill",
+					"stylers": [
+					  {
+					    "color": "#76a9c1"
+					  }
+					]
+					},
+					{
+					"featureType": "water",
+					"elementType": "labels.text.fill",
+					"stylers": [
+					  {
+					    "color": "#9e9e9e"
+					  }
+					]
+					}
+					]
+
+
+			  });
+
+			  var contentString = '<div id="content">'+
+			      '<div id="siteNotice">'+
+			      '</div>'+
+			      '<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+			      '<div id="bodyContent">'+
+			      '<p><b><i>Uluru</i></b>, also referred to as <b><i>Ayers Rock</i></b>, is a large ' +
+			      'sandstone rock formation in the southern part of the '+
+			      'Northern Territory, central Australia. It lies 335&#160;km (208&#160;mi) '+
+			      'south west of the nearest large town, Alice Springs; 450&#160;km '+
+			      '(280&#160;mi) by road. Kata Tjuta and Uluru are the two major '+
+			      'features of the Uluru - Kata Tjuta National Park. Uluru is '+
+			      'sacred to the Pitjantjatjara and Yankunytjatjara, the '+
+			      'Aboriginal people of the area. It has many springs, waterholes, '+
+			      'rock caves and ancient paintings. Uluru is listed as a World '+
+			      'Heritage Site.</p>'+
+			      '<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+			      'https://en.wikipedia.org/w/index.php?title=Uluru</a> '+
+			      '(last visited June 22, 2009).</p>'+
+			      '</div>'+
+			      '</div>';
+
+			  var infowindow = new google.maps.InfoWindow({
+			    content: contentString
+			  });
+
+			  var marker = new google.maps.Marker({
+			    position: uluru,
+			    map: map,
+			    title: 'Uluru (Ayers Rock)'
+			  });
+			  marker.addListener('click', function() {
+			    infowindow.open(map, marker);
+			  });
+			}
+	    </script>
+	    <script src="https://maps.googleapis.com/maps/api/staticmap?key=AIzaSyB8nYQIUIPpJ4nXGJHVyTMzNT5_bakJrl4&center=-33.8595970557149,151.0860561370849&zoom=12&format=png&maptype=roadmap&style=element:geometry%7Ccolor:0xf5f5f5&style=element:labels.icon%7Cvisibility:off&style=element:labels.text.fill%7Ccolor:0x616161&style=element:labels.text.stroke%7Ccolor:0xf5f5f5&style=feature:administrative.land_parcel%7Celement:labels%7Cvisibility:off&style=feature:administrative.land_parcel%7Celement:labels.text.fill%7Ccolor:0xbdbdbd&style=feature:poi%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:poi%7Celement:labels.text%7Cvisibility:off&style=feature:poi%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:poi.business%7Cvisibility:off&style=feature:poi.park%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:poi.park%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:road%7Celement:geometry%7Ccolor:0xe7c78a&style=feature:road%7Celement:geometry.fill%7Ccolor:0xceb96f%7Cweight:0.5&style=feature:road%7Celement:geometry.stroke%7Ccolor:0xceb96f%7Cvisibility:on%7Cweight:1&style=feature:road%7Celement:labels.icon%7Cvisibility:off&style=feature:road.arterial%7Celement:labels%7Cvisibility:off&style=feature:road.arterial%7Celement:labels.text.fill%7Ccolor:0x757575&style=feature:road.highway%7Celement:geometry%7Ccolor:0xcbb979&style=feature:road.highway%7Celement:labels%7Cvisibility:off&style=feature:road.highway%7Celement:labels.text.fill%7Ccolor:0x616161&style=feature:road.local%7Cvisibility:off&style=feature:road.local%7Celement:labels%7Cvisibility:off&style=feature:road.local%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&style=feature:transit%7Cvisibility:off&style=feature:transit.line%7Celement:geometry%7Ccolor:0xe5e5e5&style=feature:transit.station%7Celement:geometry%7Ccolor:0xeeeeee&style=feature:water%7Ccolor:0xaef7f4&style=feature:water%7Celement:geometry%7Ccolor:0xc9c9c9&style=feature:water%7Celement:geometry.fill%7Ccolor:0x76a9c1&style=feature:water%7Celement:labels.text.fill%7Ccolor:0x9e9e9e&size=480x360" async defer></script>
+	</section>
+</div>
+<footer>Last updated: February 24, 2017</footer>
+</body>
+</html>
